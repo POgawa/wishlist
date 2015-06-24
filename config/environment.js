@@ -4,6 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'wishlist',
     environment: environment,
+    firebase: 'https://bookwishlist.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
