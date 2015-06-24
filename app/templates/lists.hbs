@@ -1,1 +1,11 @@
+
+<div class="container">{{#link-to 'lists.new'}}Add a new list{{/link-to}}</div>
+
+<ul>
+  {{#each list in model}}
+    <li>{{list.title}}</li>
+
+  {{/each}}
+</ul>
+
 {{outlet}}
