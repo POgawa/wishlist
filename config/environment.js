@@ -24,9 +24,10 @@ module.exports = function(environment) {
       'font-src': "'self'",
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline'",
-      'connect-src': "'self' wss://*.firebaseio.com",
+      'connect-src': "'self' wss://*.firebaseio.com http://api.nytimes.com",
       'frame-src': "'self' https://*.firebaseio.com",
-      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"    }
+      'script-src': "*",
+    }
   };
 
   if (environment === 'development') {

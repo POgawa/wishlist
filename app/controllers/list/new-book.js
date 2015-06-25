@@ -7,6 +7,7 @@ export default Ember.Controller.extend({
       var book = this.store.createRecord('book', {
         title: this.get('title'),
         author: this.get('author'),
+        isbn: this.get('isbn'),
         list: this.get('controllers.list.model')
       });
 
@@ -21,7 +22,8 @@ export default Ember.Controller.extend({
 
       this.setProperties({
         title:'',
-        author:''
+        author:'',
+        isbn:''
       });
       this.transitionToRoute('lists');
 

@@ -1,9 +1,7 @@
-<ul>
-  {{#each book in model}}
-  <li>
 
-    {{book.title}}
-
-  </li>
-  {{/each}}
-</ul>
+<h2>Book</h2>
+{{#each book in model}}
+{{book.book_title}} <small>by {{book.book_author}}</small><br>
+<small>Review by</small> {{book.byline}}<br>
+{{book.url}}<br><br>
+{{/each}}
