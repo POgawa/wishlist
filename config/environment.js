@@ -22,9 +22,9 @@ module.exports = function(environment) {
      contentSecurityPolicy: {
       'default-src': "'none'",
       'font-src': "'self'",
-      'img-src': "'self'",
+      'img-src': "*",
       'style-src': "'self' 'unsafe-inline'",
-      'connect-src': "'self' wss://*.firebaseio.com",
+      'connect-src': "*",
       'frame-src': "'self' https://*.firebaseio.com",
       'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"    }
   };

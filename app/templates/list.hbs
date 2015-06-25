@@ -1,2 +1,17 @@
 
-<h1> {{model.title}}</h1>
+<h1> {{model.name}}</h1>
+{{model.books}}
+<hr class=btn-danger>
+<h1>Book Lookup</h1>
+<hr class=btn-success>
+{{outlet}}
+
+
+<form>
+  <div class="form-group">
+    <label for="search_term">Search term</label>
+    {{input value=search_term id="search_term"}}
+  </div>
+
+  <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
+</form>
