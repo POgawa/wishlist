@@ -6,5 +6,6 @@ export default DS.Model.extend({
   selected: DS.attr('boolean'),
   // isbn10: DS.attr('integer'),
   // isbn13: DS.attr('integer'),
+  isbn: DS.attr('number'),
   list: DS.belongsTo('list', {async: true})
 });

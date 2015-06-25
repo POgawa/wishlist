@@ -12,8 +12,9 @@ Router.map(function() {
     this.route("new");
   });
   this.resource("list", {path: "list/:list_id"}, function() {
-    this.resource("book", {path: 'book/:search_term'});
+    this.resource("books", {path: 'books/:search_term'});
   });
+  this.resource("book", {path: "book/:book_title"});
 });
 
 export default Router;

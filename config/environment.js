@@ -26,7 +26,8 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline'",
       'connect-src': "*",
       'frame-src': "'self' https://*.firebaseio.com",
-      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"    }
+      'script-src': "*",
+    }
   };
 
   if (environment === 'development') {
