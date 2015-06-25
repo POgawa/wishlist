@@ -1,3 +1,15 @@
 body {
   padding: 70px;
+  background: url("http://41.media.tumblr.com/tumblr_m3o7mqkRxh1rqnhppo1_1280.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+
+}
+
+.bodycontainer {
+  background: rgba(255, 255, 255, .7);
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #000000;
 }

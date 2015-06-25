@@ -7,5 +7,6 @@
     <li>{{#link-to 'book' book.title}}{{book.title}}{{/link-to}}   <small>by {{book.author}}</small></li>
   {{/each}}
 </ul>
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
 
 {{#link-to 'list.new-book'}}Add a Book{{/link-to}}
