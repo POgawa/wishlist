@@ -14,7 +14,7 @@ Router.map(function() {
   this.resource("list", {path: "list/:list_id"}, function() {
     this.route("new-book");
   });
-  this.resource("book", {path: "book/:book_id"});
+  this.resource("book", {path: "book/:book_title"});
 });
 
 export default Router;
