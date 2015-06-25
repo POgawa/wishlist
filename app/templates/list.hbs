@@ -1,0 +1,9 @@
+<h2>{{model.name}}</h2>
+
+{{outlet}}
+<ul>
+  {{#each book in model.books}}
+    <li>{{book.title}}   <small>by {{book.author}}</small></li>
+  {{/each}}
+</ul>
+{{#link-to 'list.new-book'}}Add a Book{{/link-to}}

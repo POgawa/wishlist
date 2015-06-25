@@ -3,7 +3,7 @@
 
 <ul>
   {{#each list in model}}
-    <li>{{list.title}}</li>
+    <li>{{#link-to 'list' list.id}}{{list.name}}{{/link-to}}</li>
 
   {{/each}}
 </ul>

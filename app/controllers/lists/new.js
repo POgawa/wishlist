@@ -4,12 +4,12 @@ export default Ember.Controller.extend({
   actions: {
     addList: function() {
       var list = this.store.createRecord('list', {
-        title: this.get('title'),
+        name: this.get('name'),
       });
       list.save();
       this.transitionToRoute('lists');
       this.setProperties({
-        title:''
+        name:''
       });
     }
   }

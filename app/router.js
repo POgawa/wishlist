@@ -10,6 +10,9 @@ Router.map(function() {
   this.resource("lists", function() {
     this.route("new");
   });
+  this.resource("list", {path: "list/:list_id"}, function() {
+    this.route("new-book");
+  });
 });
 
 export default Router;
