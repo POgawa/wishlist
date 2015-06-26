@@ -5,6 +5,7 @@ export default Ember.Controller.extend({
   actions: {
     submit: function() {
       this.transitionToRoute('book', this.get('search_term'));
+      this.setProperties({ search_term:''})
     },
     delete: function() {
       if(confirm("Do you want to delete this list?")) {

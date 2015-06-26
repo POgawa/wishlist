@@ -47,6 +47,7 @@ export default Ember.Controller.extend({
 
 
       this.transitionToRoute('lists');
+
     }
   }
 });
