@@ -3,8 +3,7 @@
 {{#if model}}
   {{#each book in model}}
     {{book.book_title}} <small>by {{book.book_author}}</small><br>
-    <small>Review by</small> {{book.byline}}<br>
-    {{book.url}}<br><br>
+  
     <a href='{{book.url}}'><small>Review by</small> {{book.byline}}</a><br>
     <br>
   {{/each}}
