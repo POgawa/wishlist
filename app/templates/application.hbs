@@ -1,27 +1,28 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header header-font">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Book Mashup</a>
+      <a class="navbar-brand mashup-title" href="/">Book Mashup</a>
     </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse header-font" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li>{{#link-to 'lists'}}Lists{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'lists' classNames='link-style'}}Lists{{/link-to}}</li>
+        <li>{{#link-to 'about' classNames='link-style'}}About{{/link-to}}</li>
       </ul>
     </div>
   </div>
 </nav>
+<div class="container ">
 
-<div class="col-sml-2 col-sml-offset-10">
 
-  <div class="container bodycontainer">
+  <div class="col-md-8 col-md-offset-2 bodycontainer">
+
     {{outlet}}
   </div>
 

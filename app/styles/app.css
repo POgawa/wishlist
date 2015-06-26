@@ -3,18 +3,57 @@ body {
   background: url("http://41.media.tumblr.com/tumblr_m3o7mqkRxh1rqnhppo1_1280.jpg") no-repeat center center fixed;
   background-size: cover;
   color: white;
-
+  font-family: 'PT Serif', serif;
+  font-size: 18px;
 }
 
 .bodycontainer {
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, .8);
   color: #000000;
+  padding: 10px 0px 20px 20px;
   border-radius: 5px;
-  padding: 10px;
-  border: 1px solid #000000;
-  margin-right = 50px;
+  border: 6px solid #3299CC;
 }
 
 .booklist{
   list-style-type: none;
+}
+
+.header-font {
+  font-family: 'Cinzel', serif;
+}
+
+.mashup-title {
+  font-size: 55px;
+  color: black;
+}
+
+a {
+  color: #000080;
+}
+
+.navbar-brand {
+  color: black;
+}
+
+.nav .navbar-nav li {
+  color: black;
+}
+
+.header-font li {
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: #AF4035;
+
+}
+
+.link-style {
+  text-decoration: bold;
+  color: black;
+}
+button {
+  font-family: 'Cinzel', serif;
+
 }

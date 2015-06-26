@@ -1,7 +1,12 @@
-# Wishlist
+# Book Mashup
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+by
+
+##David Abel, Jeannette Fairless, David Garber, Paul Ogawa, Cleri Philiastides and Axel Straube
+
+This is an app where one can create lists of books, search books on
+the google books API and find reviews on the New York Times Review
+of Books.
 
 ## Prerequisites
 
@@ -50,4 +55,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

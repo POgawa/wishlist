@@ -1,5 +1,7 @@
 
-<div class="container">{{#link-to 'lists.new'}}Add a new list{{/link-to}}</div>
+
+
+<h3 class="header-font">Lists</h3>
 
 <ul>
   {{#each list in model}}
@@ -9,5 +11,6 @@
   {{/each}}
 </ul>
 
-
+<div class="container header-font">{{#link-to 'lists.new'}}Add a New List{{/link-to}}</div>
+<br>
 {{outlet}}
