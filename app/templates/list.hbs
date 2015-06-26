@@ -5,9 +5,11 @@
     <li>{{#link-to 'review' book.title}}{{book.title}}{{/link-to}}   <small>by {{book.author}}</small></li>
   {{/each}}
 </ul>
-{{#link-to 'list.new-book'}}<button class="btn btn-primary" >Add a Book</button>{{/link-to}}
 
-<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+<!-- {{#link-to 'list.new-book'}}<button class="btn btn-primary" >Add a Book</button>{{/link-to}} -->
+
+
+<button class="btn btn-danger" {{action 'delete'}}>Delete list</button>
 
 <hr class=btn-danger>
 <h1 class="header-font">Book Lookup</h1>
