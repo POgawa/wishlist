@@ -1,25 +1,26 @@
 
 <ul>
   {{#each book in model}}
-  <li class="booklist">
-    <div class="row">
-      <div class="col-xs-6">
-       <p>
-         {{input type="checkbox" title=book.volumeInfo.title author=book.volumeInfo.authors isbn10=book.volumeInfo.ISBN_10 isbn13=book.volumeInfo.ISBN_13 action='checkBox' checked=book.selected}} {{book.volumeInfo.title}} by {{book.volumeInfo.authors}}
-       </p>
-       <p>
-           Published on: {{book.volumeInfo.publishedDate}}
-
-       </p>
-      </div>
-        <div class="col-xs-6 ">
-          <img src={{book.volumeInfo.imageLinks.smallThumbnail}}>
+    <li class="booklist">
+      <div class="row">
+        <div class="col-xs-6">
+         <p>
+          {{book.volumeInfo.title}} by {{book.volumeInfo.authors}}
+         </p>
+         <p>
+             Published on: {{book.volumeInfo.publishedDate}}
+         </p>
         </div>
-    </div>
-    <button {{action 'addBook2'}} class="submit">Take 2</button>
-  </li>
-  <hr class=btn-info>
+          <div class="col-xs-6 ">
+            <img src={{book.volumeInfo.imageLinks.smallThumbnail}}>
+          </div>
+      </div>
+      <form>
+
+        <button {{action 'addBook2' book}} class="submit">Add To List</button>
+      </form>
+    </li>
+    <hr class=btn-info>
   {{/each}}
   <br>
-  <button {{action 'addBook'}} class="submit">Submit</button>
 </ul>
