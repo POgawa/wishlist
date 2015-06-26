@@ -1,10 +1,18 @@
 
 <h1> {{model.name}}</h1>
-{{model.books}}
+<ul>
+  {{#each book in model.books}}
+    <li>{{#link-to 'review' book.title}}{{book.title}}{{/link-to}}   <small>by {{book.author}}</small></li>
+  {{/each}}
+</ul>
+{{#link-to 'list.new-book'}}Add a Book{{/link-to}}
+
+<button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+
 <hr class=btn-danger>
 <h1>Book Lookup</h1>
 <hr class=btn-success>
-{{outlet}}
+
 
 
 <form>
@@ -16,12 +24,4 @@
   <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
 </form>
 
-<!-- {{outlet}}
-<ul>
-  {{#each book in model.books}}
-    <li>{{#link-to 'book' book.title}}{{book.title}}{{/link-to}}   <small>by {{book.author}}</small></li>
-  {{/each}}
-</ul>
-<button class="btn btn-danger" {{action 'delete'}}>Delete</button> -->
-
-<!-- {{#link-to 'list.new-book'}}Add a Book{{/link-to}} -->
+{{outlet}}

@@ -17,13 +17,13 @@ export default Ember.Route.extend({
     }
    }).then(function(responseJSON) {
 
-     var books = [];
-     responseJSON.items.forEach(function(book) {
-       books.push(book);
+     var reviews = [];
+     responseJSON.results.forEach(function(review) {
+       reviews.push(review);
 
      });
 
-     return books;
+     return reviews;
    });
   }
 });

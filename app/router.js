@@ -12,9 +12,10 @@ Router.map(function() {
     this.route("new");
   });
   this.resource("list", {path: "list/:list_id"}, function() {
-    this.resource("books", {path: 'books/:search_term'});
+    this.resource("book", {path: 'book/:search_term'});
+    this.route("new-book");
   });
-  this.resource("book", {path: "book/:book_title"});
+  this.resource("review", {path: "review/:book_title"});
 });
 
 export default Router;
