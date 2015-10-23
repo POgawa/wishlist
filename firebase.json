@@ -1,0 +1,9 @@
+{
+  "firebase": "wishlist2121",
+  "public": "app",
+  "ignore": [
+    "firebase.json",
+    "**.*",
+    "**/node_modules/**"
+  ]
+}
